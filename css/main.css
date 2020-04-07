@@ -1,0 +1,610 @@
+html, body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+.header {
+    background-color: #080A33;
+    background-image: url("../images/football_767.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding-top: 32px;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    background-color: #080A33;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.text-logo {
+    max-width: 210px;
+    width: 41.88%;
+    max-height: 60px;
+    height: 11.88vw;
+    fill: #ffffff;
+    position: relative;
+    z-index: 4;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__title {
+    font-size: 9.06vw;
+    color: #ffffff;
+    position: relative;
+    letter-spacing: 2px;
+    z-index: 4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+    margin-bottom: 90px;
+    display: block;
+}
+
+.header__title-secondary {
+    padding-top: 30px;
+    padding-left: 17.8%;
+    text-align: start;
+    display: block;
+}
+
+.header__button, .footer__button {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__button {
+    padding-bottom: 80px;
+}
+
+.button {
+    max-width: 310px;
+    max-height: 80px;
+    width: 87.5vw;
+    height: 11.25vw;
+    background-color: #5e42b0;
+    border-radius: 40px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 4;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button:first-child {
+    margin-bottom: 14px;
+}
+
+.button__container {
+    width: 35.5vw;
+    max-width: 217px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.button__ico {
+    height: 60%;
+    width: 7.82vw;
+    max-width: 43px;
+    fill: #ffffff;
+    margin-right: 7%;
+}
+
+.button__text {
+    font-size: 2.5vw;
+    color: #ffffff;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.button__text-line:nth-child(2) {
+    font-weight: bold;
+}
+
+h2 {
+    color: #E7E7E7;
+    font-size: 9.7vw;
+    margin-left: 6.25%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.list-card h2 {
+    font-size: calc(32px + 5.6vw);
+}
+
+.list-card__left-side-photo, .list-card__right-side-photo {
+    max-width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-card__right-side-item, .list-card__left-side-item {
+    padding: 35px 6.25% 55px 6.25%;
+}
+
+.list-card__right-side-item:nth-of-type(2n), .list-card__left-side-item:nth-of-type(2n) {
+    background-color: #F4F3F8;
+}
+
+.list-card__right-side-item:nth-of-type(3n) {
+    background-color: #5e42b0;
+    color: #C1C1C3;
+}
+
+.list-card__left-side-item:nth-of-type(3n) {
+    background-color: #080A33;
+    color: #C1C1C3;
+}
+
+.list-card__title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+h3 {
+    color: #C1C1C3;
+    font-size: calc(16px + 2.5vw);
+    padding-bottom: 25px;
+}
+
+.list-card__number {
+    font-size: calc(14px + 1.3vw);
+    font-weight: bold;
+    border-bottom: 3px solid #5e42b0;
+    margin-right: 10px;
+}
+
+.list-card__right-side-item:nth-of-type(3n)>.list-card__title>.list-card__number {
+    border-bottom: 3px solid #C1C1C3;
+    color: #080A33;
+}
+
+.list-card__left-side-item:nth-of-type(3n)>.list-card__title>.list-card__number {
+    border-bottom: 3px solid #C1C1C3;
+    color: #5e42b0;
+}
+
+.list-card__text {
+    font-size: 16px;
+    margin: 0;
+}
+
+.photo-card__photo-container {
+    position: relative;
+}
+
+.photo-card__photo {
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.photo-card__number-container {
+    background-color: #5e42b0;
+    width: calc(37px + 10.29vw);
+    height: calc(37px + 10.29vw);
+    position: absolute;
+    z-index: 2;
+    left: 6.25%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-card__number {
+    font-size: calc(14px + 1.3vw);
+    font-weight: bold;
+    color: #C1C1C3;
+    border-bottom: 3px solid #8E75C9;
+    padding-bottom: 3px;
+}
+
+.photo-card__text {
+    font-size: 16px;
+    margin: 0 6.25% 75px 6.25%;
+}
+
+.footer {
+    background-color: #080A33;
+    background-image: url("../images/game_767.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.footer::after {
+    content: "";
+    position: absolute;
+    background-color: #080A33;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.footer__header {
+    margin-bottom: 75px;
+}
+
+.footer__logo-container {
+    background-color: #5e42b0;
+    border-radius: 24%;
+    max-width: 134px;
+    max-height: 138px;
+    width: 22.5vw;
+    height: 23.13vw;
+    position: relative;
+    z-index: 3;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__logo {
+    max-width: 90px;
+    width: 18.75vw;
+    fill: #ffffff;
+    position: relative;
+    z-index: 4;
+}
+
+.footer__title {
+    font-size: 10.94vw;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+    margin-left: 0;
+    margin-top: 60px;
+    margin-bottom: 12px;
+}
+
+.footer__subtitle {
+    font-size: 5vw;
+    color: #a496ca;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 4;
+    margin: 0;
+}
+
+.footer__button {
+    padding-bottom: 80px;
+}
+
+@media (min-width: 641px) {
+    .header__button, .footer__button {
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 670px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .button__text {
+        font-size: 16px;
+    }
+    .list-card {
+        position: relative;
+        border: 1px solid transparent;
+    }
+    .list-card__right-side-item, .list-card__left-side-item {
+        position: relative;
+        z-index: 0;
+    }
+    .list-card__left-side-photo, .list-card__right-side-photo {
+        position: absolute;
+        z-index: 2;
+    }
+    .list-card__text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .photo-card__text {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+    .header {
+        background-image: url("../images/football_1280.jpg");
+        padding-top: 35px;
+        padding-left: 3.9%;
+        padding-right: 3.9%;
+    }
+    .header__title {
+        font-size: 65px;
+        width: 590px;
+        margin-top: 170px;
+        margin-bottom: 300px;
+    }
+    .header__title-secondary {
+        padding-top: 0;
+        padding-left: 17.6%;
+    }
+    .header__button {
+        padding-bottom: 90px;
+    }
+    h2 {
+        margin-left: 3.9%;
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+    .list-card:first-child>h2 {
+        margin-left: 37.76%;
+    }
+    .list-card__right-side-item {
+        padding: 40px 3.9% 35px 37.76%;
+    }
+    .list-card__left-side-photo {
+        max-width: 43%;
+        top: 85px;
+        left: 0;
+    }
+    .list-card__left-side-item {
+        padding: 40px 45.57% 35px 3.9%;
+    }
+    .list-card__right-side-photo {
+        max-width: 57%;
+        top: 45px;
+        right: 0;
+    }
+    .list-card__title {
+        height: 30px;
+        margin-bottom: 26px;
+    }
+    .photo-card__photo {
+        margin-bottom: 25px;
+    }
+    .photo-card__number-container {
+        left: 3.9%;
+        bottom: 0;
+    }
+    .photo-card__text {
+        margin: 10px 3.9% 100px 3.9%;
+    }
+    .footer {
+        background-image: url("../images/game_1280.jpg");
+        padding-top: 125px;
+        padding-left: 3.9%;
+        padding-right: 3.9%;
+        padding-bottom: 20px;
+    }
+    .footer__subtitle {
+        margin-bottom: 260px;
+    }
+    .footer__button {
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer__title {
+        font-size: 84px;
+    }
+    h2, .list-card>h2 {
+        font-size: 75px;
+    }
+    h3 {
+        font-size: 36px;
+        padding-bottom: 0;
+    }
+    .list-card__number {
+        font-size: 26px;
+        border-bottom: 4px solid #5e42b0;
+        margin-right: 12px;
+    }
+    .photo-card__number {
+        font-size: 24px;
+        border-bottom: 5px solid #8E75C9;
+    }
+    .footer__subtitle {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 961px) {
+    .header {
+        background-image: url("../images/football_1920.jpg");
+        padding-top: 40px;
+        padding-left: 9.9%;
+        padding-right: 9.9%;
+    }
+    .header__title {
+        font-size: calc(40px + 2.65vw);
+        max-width: 1540px;
+        width: 100%;
+        margin-top: 280px;
+        margin-bottom: 210px;
+    }
+    .header__title-secondary {
+        padding-top: 0;
+        padding-left: 0;
+        text-align: end;
+    }
+    .header__button {
+        padding-bottom: 110px;
+    }
+    h2, .list-card>h2 {
+        font-size: 3.9vw;
+    }
+    .list-card>h2 {
+        font-size: calc(50px + 1.3vw);
+        margin-top: 95px;
+        margin-left: 9.9%;
+    }
+    .list-card:first-child>h2 {
+        margin-left: 41.67%;
+    }
+    h3 {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .list-card__text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .list-card__right-side-item {
+        padding: 10px 9.9% 60px 41.67%;
+    }
+    .list-card__left-side-photo {
+        max-width: 29.48%;
+        top: 35px;
+        left: 9.9%;
+    }
+    .list-card__left-side-item {
+        padding: 10px 50% 60px 9.9%;
+    }
+    .list-card__right-side-photo {
+        max-width: 51.6%;
+        top: 30px;
+        right: 6.25%;
+    }
+    .photo-card {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .photo-card__photo-container {
+        width: 50%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        position: static;
+        font-size: 0;
+    }
+    .photo-card:nth-child(2n)>.photo-card__photo-container {
+        order: 1;
+    }
+    .photo-card__photo {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .photo-card__number-container {
+        width: 8.64vw;
+        height: 8.64vw;
+        left: calc(50% - 8.64vw/2);
+        top: calc(50% - 8.64vw/2);
+    }
+    .photo-card__description {
+        width: 50%;
+        padding-left: 9%;
+        padding-right: 9%;
+        box-sizing: border-box;
+    }
+    .footer {
+        background-image: url("../images/game_1920.jpg");
+        padding-top: 220px;
+        padding-bottom: 50px;
+    }
+    .footer__header {
+        display: flex;
+        align-items: center;
+        max-width: 876px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 160px;
+    }
+    .footer__logo-container {
+        margin-right: 35px;
+        margin-top: 20px;
+    }
+    .footer__title {
+        margin: 0;
+    }
+    .footer__subtitle {
+        font-size: 29px;
+        text-align: start;
+    }
+    .footer__button {
+        margin-bottom: 255px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .header__title {
+        font-size: 90px;
+    }
+    h2, .list-card>h2 {
+        font-size: 75px;
+    }
+    .list-card {
+        width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .list-card__right-side-item:nth-of-type(2n)::after, .list-card__left-side-item:nth-of-type(2n)::after {
+        background-color: #F4F3F8;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -50%;
+        right: -50%;
+        bottom: 0;
+        z-index: -1;
+    }
+    .list-card__right-side-item:nth-of-type(3n)::after {
+        background-color: #5e42b0;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -50%;
+        right: -50%;
+        bottom: 0;
+        z-index: -1;
+    }
+    .list-card__left-side-item:nth-of-type(3n)::after {
+        background-color: #080A33;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -50%;
+        right: -50%;
+        bottom: 0;
+        z-index: -1;
+    }
+    .photo-card {
+        width: 2048px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .photo-card__number-container {
+        width: 166px;
+        height: 166px;
+        left: calc(50% - 166px/2);
+        top: calc(50% - 166px/2);
+    }
+}

@@ -4,12 +4,12 @@
 
 ## Большой экран
 
-- ![Layout](./demo/desktop.png)
+![Layout](./demo/desktop.png)
 
 ## Планшет
 
-- ![Layout](./demo/tablet.png)
+![Layout](./demo/tablet.png)
 
 ## Мобильный
 
-- ![Layout](./demo/mobile.png)
+![Layout](./demo/mobile.png)

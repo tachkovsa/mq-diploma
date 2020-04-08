@@ -296,9 +296,9 @@ html, body {
     z-index: 4;
     margin: 0;
 }
-
-.footer__button {
-    padding-bottom: 80px;
+.text-logo-container {
+    display: block;
+    margin-top: 80px;
 }
 
 @media (max-width: 640px) {
@@ -404,8 +404,8 @@ html, body {
     .footer__subtitle {
         margin-bottom: 260px;
     }
-    .footer__button {
-        padding-bottom: 50px;
+    .text-logo-container {
+        margin-top: 50px;
     }
 }
 

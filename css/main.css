@@ -320,7 +320,6 @@ h3 {
     }
     .list-card {
         position: relative;
-        border: 1px solid transparent;
     }
     .list-card__right-side-item, .list-card__left-side-item {
         position: relative;

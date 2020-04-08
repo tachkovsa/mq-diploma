@@ -455,12 +455,14 @@ html, body {
         padding-left: 0;
         text-align: end;
     }
+    .list-card {
+        padding-top: 95px;
+    }
     .h2, .list-card>.h2 {
         font-size: 3.9vw;
     }
     .list-card>.h2 {
         font-size: calc(50px + 1.3vw);
-        margin-top: 95px;
         margin-left: 9.9%;
     }
     .list-card:first-child>.h2 {

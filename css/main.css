@@ -167,20 +167,34 @@ html, body {
 }
 
 .list-card__number {
+    position: relative;
     font-size: calc(14px + 1.3vw);
     font-weight: bold;
-    border-bottom: 3px solid #5e42b0;
     margin-right: 10px;
+}
+.list-card__number::after {
+    content: "";
+    position: absolute;
+    background-color: #5e42b0;
+    height: 3px;
+    width: 100%;
+    bottom: -3px;
+    left: 0;
+    border-radius: 15px;
 }
 
 .list-card__right-side-item:nth-of-type(3n)>.list-card__title>.list-card__number {
-    border-bottom: 3px solid #C1C1C3;
     color: #080A33;
+}
+.list-card__right-side-item:nth-of-type(3n)>.list-card__title>.list-card__number::after {
+    background-color: #C1C1C3;
 }
 
 .list-card__left-side-item:nth-of-type(3n)>.list-card__title>.list-card__number {
-    border-bottom: 3px solid #C1C1C3;
     color: #5e42b0;
+}
+.list-card__left-side-item:nth-of-type(3n)>.list-card__title>.list-card__number::after {
+    background-color: #C1C1C3;
 }
 
 .list-card__text {
@@ -213,11 +227,21 @@ html, body {
 }
 
 .photo-card__number {
+    position: relative;
     font-size: calc(14px + 1.3vw);
     font-weight: bold;
     color: #C1C1C3;
-    border-bottom: 3px solid #8E75C9;
     padding-bottom: 3px;
+}
+.photo-card__number::after {
+    content: "";
+    position: absolute;
+    background-color: #8E75C9;
+    height: 3px;
+    width: 100%;
+    bottom: -3px;
+    left: 0;
+    border-radius: 15px;
 }
 
 .photo-card__text {
@@ -422,12 +446,10 @@ html, body {
     }
     .list-card__number {
         font-size: 26px;
-        border-bottom: 4px solid #5e42b0;
         margin-right: 12px;
     }
     .photo-card__number {
         font-size: 24px;
-        border-bottom: 5px solid #8E75C9;
     }
     .footer__subtitle {
         font-size: 38px;

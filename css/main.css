@@ -5,7 +5,7 @@ html, body {
     min-width: 320px;
 }
 
-h1, h2, h3 {
+.h1, .h2, .h3 {
     text-transform: uppercase;
 }
 
@@ -117,7 +117,7 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
-h2 {
+.h2 {
     color: #E7E7E7;
     font-size: 9.7vw;
     margin-left: 6.25%;
@@ -125,7 +125,7 @@ h2 {
     margin-bottom: 15px;
 }
 
-.list-card h2 {
+.list-card .h2 {
     font-size: calc(32px + 5.6vw);
 }
 
@@ -160,7 +160,7 @@ h2 {
     margin: 0;
 }
 
-h3 {
+.h3 {
     color: #C1C1C3;
     font-size: calc(16px + 2.5vw);
     padding-bottom: 25px;
@@ -356,12 +356,12 @@ h3 {
         padding-top: 0;
         padding-left: 17.6%;
     }
-    h2 {
+    .h2 {
         margin-left: 3.9%;
         margin-top: 60px;
         margin-bottom: 0;
     }
-    .list-card:first-child>h2 {
+    .list-card:first-child > .h2 {
         margin-left: 37.76%;
     }
     .list-card__right-side-item {
@@ -413,10 +413,10 @@ h3 {
     .footer__title {
         font-size: 84px;
     }
-    h2, .list-card>h2 {
+    .h2, .list-card>.h2 {
         font-size: 75px;
     }
-    h3 {
+    .h3 {
         font-size: 36px;
         padding-bottom: 0;
     }
@@ -454,18 +454,18 @@ h3 {
         padding-left: 0;
         text-align: end;
     }
-    h2, .list-card>h2 {
+    .h2, .list-card>.h2 {
         font-size: 3.9vw;
     }
-    .list-card>h2 {
+    .list-card>.h2 {
         font-size: calc(50px + 1.3vw);
         margin-top: 95px;
         margin-left: 9.9%;
     }
-    .list-card:first-child>h2 {
+    .list-card:first-child>.h2 {
         margin-left: 41.67%;
     }
-    h3 {
+    .h3 {
         padding-top: 40px;
         padding-bottom: 30px;
     }
@@ -553,7 +553,7 @@ h3 {
     .header__title {
         font-size: 90px;
     }
-    h2, .list-card>h2 {
+    .h2, .list-card>.h2 {
         font-size: 75px;
     }
     .list-card {

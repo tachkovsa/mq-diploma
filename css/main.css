@@ -320,7 +320,6 @@ html, body {
     }
     .list-card {
         position: relative;
-        border: 1px solid transparent;
     }
     .list-card__right-side-item, .list-card__left-side-item {
         position: relative;
@@ -501,7 +500,7 @@ html, body {
         width: 50%;
         margin-bottom: 0;
         padding-bottom: 0;
-        position: static;
+        position: relative;
         font-size: 0;
     }
     .photo-card:nth-child(2n)>.photo-card__photo-container {

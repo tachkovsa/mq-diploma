@@ -90,10 +90,6 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
-.button:first-child {
-    margin-bottom: 14px;
-}
-
 .button__container {
     width: 35.5vw;
     max-width: 217px;
@@ -303,6 +299,12 @@ h3 {
 
 .footer__button {
     padding-bottom: 80px;
+}
+
+@media (max-width: 640px) {
+    .button:first-child {
+        margin-bottom: 14px;
+    }
 }
 
 @media (min-width: 641px) {

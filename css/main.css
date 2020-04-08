@@ -19,6 +19,7 @@ h1, h2, h3 {
     padding-top: 32px;
     padding-left: 6.25%;
     padding-right: 6.25%;
+    padding-bottom: 80px;
 }
 
 .header::after {
@@ -69,10 +70,6 @@ h1, h2, h3 {
 .header__button, .footer__button {
     display: flex;
     flex-direction: column;
-}
-
-.header__button {
-    padding-bottom: 80px;
 }
 
 .button {
@@ -346,6 +343,7 @@ h3 {
         padding-top: 35px;
         padding-left: 3.9%;
         padding-right: 3.9%;
+        padding-bottom: 90px;
     }
     .header__title {
         font-size: 65px;
@@ -356,9 +354,6 @@ h3 {
     .header__title-secondary {
         padding-top: 0;
         padding-left: 17.6%;
-    }
-    .header__button {
-        padding-bottom: 90px;
     }
     h2 {
         margin-left: 3.9%;
@@ -444,6 +439,7 @@ h3 {
         padding-top: 40px;
         padding-left: 9.9%;
         padding-right: 9.9%;
+        padding-bottom: 110px;
     }
     .header__title {
         font-size: calc(40px + 2.65vw);
@@ -456,9 +452,6 @@ h3 {
         padding-top: 0;
         padding-left: 0;
         text-align: end;
-    }
-    .header__button {
-        padding-bottom: 110px;
     }
     h2, .list-card>h2 {
         font-size: 3.9vw;

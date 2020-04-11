@@ -82,8 +82,8 @@ html, body {
     text-transform: uppercase;
     position: relative;
     z-index: 4;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -326,8 +326,8 @@ html, body {
 }
 
 @media (max-width: 640px) {
-    .button:first-child {
-        margin-bottom: 14px;
+    .button:nth-child(n+2) {
+        margin-top: 14px;
     }
 }
 
@@ -335,9 +335,10 @@ html, body {
     .header__button, .footer__button {
         flex-wrap: wrap;
         flex-direction: row;
-        max-width: 670px;
-        margin-left: auto;
-        margin-right: auto;
+        /* max-width: 670px; */
+        /* margin-left: auto;
+        margin-right: auto; */
+        justify-content: center;
     }
     .button__text {
         font-size: 16px;
@@ -379,6 +380,9 @@ html, body {
     .header__title-secondary {
         padding-top: 0;
         padding-left: 17.6%;
+    }
+    .button:nth-child(n+2) {
+        margin-left: 30px;
     }
     .h2 {
         margin-left: 3.9%;
@@ -475,6 +479,9 @@ html, body {
         padding-top: 0;
         padding-left: 0;
         text-align: end;
+    }
+    .button:nth-child(n+2) {
+        margin-left: 50px;
     }
     .list-card {
         padding-top: 95px;

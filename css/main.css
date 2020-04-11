@@ -73,10 +73,10 @@ html, body {
 }
 
 .button {
-    max-width: 310px;
+    /* max-width: 310px;
     max-height: 80px;
     width: 87.5vw;
-    height: 11.25vw;
+    height: 11.25vw; */
     background-color: #5e42b0;
     border-radius: 40px;
     text-transform: uppercase;
@@ -84,7 +84,6 @@ html, body {
     z-index: 4;
     /* margin-left: auto;
     margin-right: auto; */
-    display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -326,8 +325,20 @@ html, body {
 }
 
 @media (max-width: 640px) {
+    .button {
+        display: flex;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .button__ico {
+        height: 24px;
+    }
     .button:nth-child(n+2) {
         margin-top: 14px;
+    }
+    .footer__button {
+        padding-left: 6.25%;
+        padding-right: 6.25%;
     }
 }
 
@@ -339,6 +350,9 @@ html, body {
         /* margin-left: auto;
         margin-right: auto; */
         justify-content: center;
+    }
+    .button {
+        padding: 16px 40px;
     }
     .button__text {
         font-size: 16px;
@@ -441,6 +455,9 @@ html, body {
     .footer__title {
         font-size: 84px;
     }
+    .button__ico {
+        height: 46px;
+    }
     .h2, .list-card>.h2 {
         font-size: 75px;
     }
@@ -482,6 +499,9 @@ html, body {
     }
     .button:nth-child(n+2) {
         margin-left: 50px;
+    }
+    .button__ico {
+        height: 50px;
     }
     .list-card {
         padding-top: 95px;

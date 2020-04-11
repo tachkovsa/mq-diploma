@@ -163,7 +163,7 @@ html, body {
 .h3 {
     color: #C1C1C3;
     font-size: calc(16px + 2.5vw);
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .list-card__number {
@@ -442,7 +442,7 @@ html, body {
     }
     .h3 {
         font-size: 36px;
-        padding-bottom: 0;
+        margin-bottom: 0;
     }
     .list-card__number {
         font-size: 26px;
@@ -490,8 +490,8 @@ html, body {
         margin-left: 41.67%;
     }
     .h3 {
-        padding-top: 40px;
-        padding-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 30px;
     }
     .list-card__text {
         font-size: 20px;

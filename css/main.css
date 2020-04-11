@@ -542,12 +542,23 @@ html, body {
     .photo-card__number-container {
         width: 8.64vw;
         height: 8.64vw;
-        left: calc(50% - 8.64vw/2);
+        left: calc(100% - 8.64vw/2);
         top: calc(50% - 8.64vw/2);
+    }
+    .photo-card:nth-child(even) .photo-card__number-container {
+        left: calc(-8.64vw/2);
     }
     .photo-card__description {
         width: 50%;
+        padding-left: 130px;
+        padding-right: 130px;
         box-sizing: border-box;
+    }
+    .h2 {
+        margin: 0;
+    }
+    .photo-card__text {
+        margin: 16px 0 0 0;
     }
     .footer {
         background-image: url("../images/game_1920.jpg");
